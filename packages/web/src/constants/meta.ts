@@ -1,3 +1,2 @@
-export const siteTitle = 'GitHub users';
-export const siteDescription =
-  'Site com todos os usarios do github salvos em memória.';
+export const siteTitle = 'Origin9 users';
+export const siteDescription = 'Site lista de usuarios.';
