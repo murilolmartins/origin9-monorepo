@@ -27,7 +27,9 @@ execute o comando para instalar as dependencias:
 
 - Instalar o docker e o docker-compose em sua maquina e rodar o comando `yarn server docker:up`. Esse comando ira iniciar um container com o banco de dados postgres.
 
-- Rodar o comando `yarn server migration:dev` e `yarn server migration:test` para criar as tabelas no banco de dados.
+- Rodar o comando `yarn server migrate:dev` e `yarn server migrate:test` para criar as tabelas no banco de dados.
+
+- Rodar o comando `yarn server seed:db` para popular o banco de dados com dados.
 
 # Iniciar o web:
 
