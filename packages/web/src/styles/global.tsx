@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
       font-size: 62.5%;
       font-family: ${theme.font.family} !important;
       color: ${theme.colors.black};
-      height: auto;
+      height: 100%;
     }
 
     body {

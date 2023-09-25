@@ -9,15 +9,8 @@ const SeedDb = async () => {
 
   const users = usersData.map((userProps) => new UserEntity(userProps));
 
-  await prisma.user.create({
-    data: {
-      id: users[0].id,
-      name: users[0].name,
-      taxId: users[0].taxId,
-      birthDate: users[0].birthDate,
-      address: users[0].address,
-      status: 'INACTIVE'
-    }
+  await prisma.user.createMany({
+    data: users.map((user) => user.toJSON())
   });
 
   console.log('Database seeded!');
